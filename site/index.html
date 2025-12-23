@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Earl Raven Photography</title>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Page styles -->
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container navbar">
+      <a class="nav-logo" href="index.html">Earl Raven</a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="gallery.html">Gallery</a>
+        <a href="archives.html">Archives</a>
+        <a href="blog.html">Blog</a>
+        <a href="information.html">Information</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Photography that feels real.</h1>
+          <p>
+            Clean, cinematic images — portraits, lifestyle, and moments that don’t need to be staged to hit hard.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="gallery.html">View Featured Work</a>
+            <a class="btn ghost" href="contact.html">Book a Session</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Quick highlights">
+            <div class="stat">
+              <span class="stat-num">Portraits</span>
+              <span class="stat-label">People • Lifestyle</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Events</span>
+              <span class="stat-label">Moments • Energy</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Creative</span>
+              <span class="stat-label">Concept • Editorial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <!-- Replace these with his best 2–3 images -->
+          <a class="hero-card" href="gallery.html" aria-label="Featured photo 1">
+            <img src="images/featured_01.jpg" alt="Featured photo 1" loading="eager" />
+          </a>
+
+          <a class="hero-card" href="gallery.html" aria-label="Featured photo 2">
+            <img src="images/featured_02.jpg" alt="Featured photo 2" loading="lazy" />
+          </a>
+
+          <a class="hero-card tall" href="gallery.html" aria-label="Featured photo 3">
+            <img src="images/featured_03.jpg" alt="Featured photo 3" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Collections</h2>
+          <p>Hand-picked sets so people can understand your style in 10 seconds.</p>
+        </div>
+
+        <div class="collection-grid">
+          <a class="collection" href="archives.html">
+            <div class="collection-img">
+              <img src="images/collection_portraits.jpg" alt="Portrait collection cover" loading="lazy" />
+            </div>
+            <div class="collection-meta">
+              <h3>Portraits</h3>
+              <p>Sharp, natural, and cinematic.</p>
+            </div>
+          </a>
+
+          <a class="collection" href="archives.html">
+            <div class="collection-img">
+              <img src="images/collection_events.jpg" alt="Events collection cover" loading="lazy" />
+            </div>
+            <div class="collection-meta">
+              <h3>Events</h3>
+              <p>Real moments, real energy.</p>
+            </div>
+          </a>
+
+          <a class="collection" href="archives.html">
+            <div class="collection-img">
+              <img src="images/collection_creative.jpg" alt="Creative collection cover" loading="lazy" />
+            </div>
+            <div class="collection-meta">
+              <h3>Creative</h3>
+              <p>Concept work + editorial vibes.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini Gallery Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head row">
+          <div>
+            <h2>Recent Work</h2>
+            <p>A quick preview. Full sets live in the Gallery.</p>
+          </div>
+          <a class="text-link" href="gallery.html">Open Full Gallery →</a>
+        </div>
+
+        <div class="mini-grid">
+          <img src="images/recent_01.jpg" alt="Recent work 1" loading="lazy" />
+          <img src="images/recent_02.jpg" alt="Recent work 2" loading="lazy" />
+          <img src="images/recent_03.jpg" alt="Recent work 3" loading="lazy" />
+          <img src="images/recent_04.jpg" alt="Recent work 4" loading="lazy" />
+          <img src="images/recent_05.jpg" alt="Recent work 5" loading="lazy" />
+          <img src="images/recent_06.jpg" alt="Recent work 6" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Teaser + CTA -->
+    <section class="section">
+      <div class="container about-split">
+        <div class="about-box">
+          <h2>About Earl</h2>
+          <p>
+            Short and real. Who you are, what you shoot, what people should expect from working with you.
+            No walls of text — just confidence and clarity.
+          </p>
+          <a class="btn ghost" href="information.html">Read More</a>
+        </div>
+
+        <div class="cta-box">
+          <h2>Ready to shoot?</h2>
+          <p>
+            Tell me what you’re looking for — location, vibe, and your ideal date. I’ll respond with next steps.
+          </p>
+          <a class="btn primary" href="contact.html">Contact / Booking</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Earl Raven Photography. All rights reserved.</p>
+      <p class="muted">Built with love. Minimal. Fast. Mobile-friendly.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
