@@ -36,29 +36,32 @@
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.25rem;
+  gap: 1.5rem;
   max-width: 520px;
   margin: 0 auto;
 }
 
 .contact-block {
-  padding: 1.4rem 1.6rem;
-  border: 1px solid rgba(255,255,255,0.08);
+  padding: 1.6rem 1.75rem;
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 14px;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.04);
   text-align: center;
 }
 
+/* 🔥 TITLE VISIBILITY FIX */
 .contact-block h3 {
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
+  font-size: 0.95rem;              /* increased */
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  color: #b5b5b5;
+  margin-bottom: 0.65rem;
+  color: #e6e6e6;                  /* brighter */
 }
 
+/* Content text */
 .contact-block p {
-  font-size: 0.95rem;
+  font-size: 1rem;
+  color: #dcdcdc;
 }
 
 .contact-block a {
@@ -68,30 +71,6 @@
 
 .contact-block a:hover {
   text-decoration: underline;
-}
-
-/* =========================
-   Instagram Button Card
-   ========================= */
-
-.contact-cta {
-  padding: 1.2rem;
-}
-
-.contact-cta .btn {
-  display: inline-block;
-  padding: 0.7rem 1.6rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.2);
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: transparent;
-}
-
-.contact-cta .btn:hover {
-  background: rgba(255,255,255,0.08);
 }
 
 /* =========================
@@ -105,7 +84,7 @@
 }
 
 .contact-note h2 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin-bottom: 0.75rem;
 }
 
