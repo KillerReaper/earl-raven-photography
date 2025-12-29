@@ -14,7 +14,7 @@
 
 .page-hero {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .page-hero h1 {
@@ -30,39 +30,7 @@
 }
 
 /* =========================
-   Action Buttons
-   ========================= */
-
-.contact-actions {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 2rem 0 3rem;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 0.8rem 1.6rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.2);
-  text-decoration: none;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgba(255,255,255,0.08);
-}
-
-.btn:hover {
-  background: rgba(255,255,255,0.14);
-}
-
-.btn-ghost {
-  background: transparent;
-}
-
-/* =========================
-   Contact Info Stack
+   Contact Stack
    ========================= */
 
 .contact-grid {
@@ -74,7 +42,7 @@
 }
 
 .contact-block {
-  padding: 1.25rem 1.5rem;
+  padding: 1.4rem 1.6rem;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 14px;
   background: rgba(255,255,255,0.03);
@@ -102,8 +70,26 @@
   text-decoration: underline;
 }
 
+/* Instagram button under phone */
+.contact-instagram {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+}
+
+.contact-instagram:hover {
+  background: rgba(255,255,255,0.08);
+}
+
 /* =========================
-   Availability Note
+   Availability Section
    ========================= */
 
 .contact-note {
