@@ -1,0 +1,64 @@
+/* =========================
+   Information Page Layout
+   ========================= */
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+/* =========================
+   Page Header
+   ========================= */
+
+.info-hero {
+  max-width: 700px;
+  margin-bottom: 4rem;
+}
+
+.info-hero h1 {
+  font-size: clamp(2.2rem, 3vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.info-hero p {
+  color: #b5b5b5;
+  line-height: 1.6;
+}
+
+/* =========================
+   Main Info Section
+   ========================= */
+
+.info-main {
+  margin-bottom: 4rem;
+}
+
+.info-text {
+  max-width: 720px;
+}
+
+.info-text p {
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+
+/* =========================
+   Focus / Philosophy
+   ========================= */
+
+.info-focus {
+  max-width: 720px;
+}
+
+.info-focus h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-focus p {
+  color: #b5b5b5;
+  line-height: 1.6;
+}
