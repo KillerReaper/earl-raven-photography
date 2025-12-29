@@ -77,17 +77,17 @@
   </main>
 
   <!-- =========================
-       SITE FOOTER
+       Footer
        ========================= -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© 2025 Earl Raven Photography</p>
-
-      <a href="#" class="footer-instagram" aria-label="Instagram">
-        Instagram
-      </a>
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Earl Raven Photography. All rights reserved.</p>
+      <p class="muted">Built with love. Minimal. Fast. Mobile-friendly.</p>
     </div>
   </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
