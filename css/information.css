@@ -3,96 +3,60 @@
    ========================= */
 
 .page {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 5rem;
+  padding: 4rem 1.5rem 5rem;
 }
 
 /* =========================
-   Identity Hero
+   Cinematic Intro Text
    ========================= */
 
-.identity-hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-bottom: 5rem;
+.identity-intro {
+  max-width: 720px;
+  margin-bottom: 6rem;
 }
 
-.identity-image {
+.identity-intro p {
+  margin-bottom: 1.4rem;
+  line-height: 1.75;
+  color: #d6d6d6;
+}
+
+/* =========================
+   Identity Reveal
+   ========================= */
+
+.identity-reveal {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.identity-reveal h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* Portrait Image */
+.identity-reveal img {
   max-width: 420px;
-}
-
-.identity-image img {
   width: 100%;
   display: block;
+  margin: 0 auto;
   border-radius: 6px;
-}
-
-/* Text overlay feel */
-.identity-text {
-  max-width: 600px;
-}
-
-.identity-kicker {
-  font-size: 0.75rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #9a9a9a;
-  margin-bottom: 0.5rem;
-}
-
-.identity-text h1 {
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-}
-
-/* =========================
-   Reveal Section
-   ========================= */
-
-.info-reveal {
-  max-width: 720px;
-  margin-bottom: 4rem;
-}
-
-.info-reveal .lead {
-  font-size: 1.1rem;
-  color: #e6e6e6;
-  margin-bottom: 1.5rem;
-}
-
-.info-reveal p {
-  margin-bottom: 1.25rem;
-  line-height: 1.7;
-  color: #cfcfcf;
-}
-
-/* =========================
-   Focus Section
-   ========================= */
-
-.info-focus {
-  max-width: 720px;
-}
-
-.info-focus h2 {
-  font-size: 1.3rem;
-  margin-bottom: 0.75rem;
-}
-
-.info-focus p {
-  color: #b5b5b5;
-  line-height: 1.6;
 }
 
 /* =========================
    Responsive
    ========================= */
 
-@media (min-width: 900px) {
-  .identity-hero {
-    grid-template-columns: 420px 1fr;
-    align-items: center;
-    gap: 4rem;
+@media (max-width: 768px) {
+  .identity-intro {
+    margin-bottom: 4rem;
+  }
+
+  .identity-reveal {
+    margin-top: 4rem;
   }
 }
