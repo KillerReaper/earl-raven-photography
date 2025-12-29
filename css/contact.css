@@ -1,15 +1,20 @@
 /* =========================
-   Contact Page
+   Contact Page Layout
    ========================= */
 
 .page {
-  width: min(1100px, 92vw);
+  max-width: 900px;
   margin: 0 auto;
-  padding: 4rem 0 5rem;
+  padding: 4rem 1.5rem 5rem;
 }
 
+/* =========================
+   Hero
+   ========================= */
+
 .page-hero {
-  margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .page-hero h1 {
@@ -19,30 +24,73 @@
 
 .page-hero p {
   max-width: 60ch;
+  margin: 0 auto;
   color: #b5b5b5;
   line-height: 1.6;
 }
 
 /* =========================
-   Contact Grid
+   Action Buttons
+   ========================= */
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.14);
+}
+
+.btn-ghost {
+  background: transparent;
+}
+
+/* =========================
+   Contact Info Stack
    ========================= */
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.contact-block {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  text-align: center;
 }
 
 .contact-block h3 {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  color: #b5b5b5;
 }
 
 .contact-block p {
   font-size: 0.95rem;
-  color: #e0e0e0;
 }
 
 .contact-block a {
@@ -52,4 +100,24 @@
 
 .contact-block a:hover {
   text-decoration: underline;
+}
+
+/* =========================
+   Availability Note
+   ========================= */
+
+.contact-note {
+  margin: 4rem auto 0;
+  max-width: 60ch;
+  text-align: center;
+}
+
+.contact-note h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-note p {
+  color: #b5b5b5;
+  line-height: 1.6;
 }
