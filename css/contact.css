@@ -1,123 +1,55 @@
 /* =========================
-   Contact Page Base
+   Contact Page
    ========================= */
 
-.contact-page {
-  max-width: 900px;
+.page {
+  width: min(1100px, 92vw);
   margin: 0 auto;
-  padding: 4rem 1.5rem;
-  font-family: inherit;
-  color: #111;
+  padding: 4rem 0 5rem;
 }
 
-/* =========================
-   Header
-   ========================= */
-
-.contact-header {
-  text-align: center;
+.page-hero {
   margin-bottom: 3rem;
 }
 
-.contact-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.page-hero h1 {
+  font-size: clamp(2.2rem, 3vw, 3rem);
+  margin-bottom: 0.75rem;
 }
 
-.contact-header p {
-  max-width: 600px;
-  margin: 0 auto;
-  color: #555;
+.page-hero p {
+  max-width: 60ch;
+  color: #b5b5b5;
   line-height: 1.6;
 }
 
 /* =========================
-   Form
+   Contact Grid
    ========================= */
 
-.contact-form-section {
-  margin-bottom: 4rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.contact-form label span {
-  display: block;
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  color: #666;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #aaa;
-  padding: 0.75rem 0;
-  font-size: 1rem;
-  background: transparent;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-bottom-color: #000;
-}
-
-.contact-form button {
-  align-self: center;
-  margin-top: 1rem;
-  padding: 0.75rem 2.5rem;
-  border: 1px solid #000;
-  background: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 0.8rem;
-}
-
-/* =========================
-   Contact Details
-   ========================= */
-
-.contact-details {
+.contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  text-align: center;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
 }
 
-.contact-item h3 {
-  font-size: 0.9rem;
+.contact-block h3 {
+  font-size: 0.8rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 
-.contact-item p {
+.contact-block p {
   font-size: 0.95rem;
-  color: #444;
+  color: #e0e0e0;
 }
 
-/* =========================
-   Social
-   ========================= */
-
-.contact-social {
-  text-align: center;
-}
-
-.instagram-link {
+.contact-block a {
+  color: inherit;
   text-decoration: none;
-  color: #000;
-  font-size: 0.85rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+}
+
+.contact-block a:hover {
+  text-decoration: underline;
 }
