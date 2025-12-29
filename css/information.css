@@ -10,12 +10,13 @@
 /* Shared section styling */
 .identity-section {
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 /* ACT I — narrow, intimate */
 .identity-intro {
   max-width: 600px;
-  margin-left: 10%;
+  margin: 0 auto;
 }
 
 .identity-intro p {
@@ -23,12 +24,13 @@
   line-height: 1.9;
   color: var(--text-main);
   margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 /* ACT II — wider, steadier */
 .identity-body {
   max-width: 720px;
-  margin-left: 10%;
+  margin: 0 auto;
 }
 
 .identity-body p {
@@ -36,6 +38,7 @@
   line-height: 1.9;
   color: var(--text-muted);
   margin-bottom: 2.3rem;
+  text-align: center;
 }
 
 /* Emphasized spacing moments */
@@ -75,8 +78,6 @@
 @media (max-width: 768px) {
   .identity-intro,
   .identity-body {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 90%;
   }
 
