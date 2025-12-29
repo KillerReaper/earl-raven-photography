@@ -70,11 +70,17 @@
   text-decoration: underline;
 }
 
-/* Instagram button under phone */
-.contact-instagram {
+/* =========================
+   Instagram Button Card
+   ========================= */
+
+.contact-cta {
+  padding: 1.2rem;
+}
+
+.contact-cta .btn {
   display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.6rem 1.4rem;
+  padding: 0.7rem 1.6rem;
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.2);
   font-size: 0.7rem;
@@ -84,7 +90,7 @@
   background: transparent;
 }
 
-.contact-instagram:hover {
+.contact-cta .btn:hover {
   background: rgba(255,255,255,0.08);
 }
 
