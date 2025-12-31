@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Earl Raven Photography</title>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Blog-only styles (empty for now, future use) -->
+  <link rel="stylesheet" href="../css/blog.css" />
+</head>
+
+<body>
+  <!-- =========================
+       Header / Navigation
+       ========================= -->
+  <header>
+    <div class="container navbar">
+      <a class="nav-logo" href="../index.html">Earl Raven</a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="gallery.html">Gallery</a>
+        <a href="archives.html">Archives</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="information.html">Information</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================
+       Blog Placeholder Content
+       ========================= -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Blog</h2>
+          <p>
+            Community posts, reviews, and discussions will live here.
+          </p>
+        </div>
+
+        <p class="muted" style="max-width: 720px;">
+          This section is currently being built. Soon, this space will be used for
+          reviews, conversations around collections, and shared thoughts on the work.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       Footer
+       ========================= -->
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Earl Raven Photography. All rights reserved.</p>
+      <p class="muted">Built with love. Minimal. Fast. Mobile-friendly.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
